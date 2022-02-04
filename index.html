@@ -8,12 +8,74 @@
     <title>Odin Sign Up Form</title>
 </head>
 <body>
-    <aside class="hero">
-
-    </aside>
-
-    <main class="description">
-        
-    </main>
+    <div class="container">
+        <aside>
+            <div class="header">
+                <div class="logoContainer">
+                    <div class="logo">
+                        <img src="odin-lined.png" alt="Odin Logo">
+                    </div>
+                    <div class="logoText">
+                        <h1>Odin</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="asideFooter">
+                <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+            </div>
+        </aside>
+    
+        <main>
+            <div class="top">
+                <h3>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <i>now</i> to get started.
+                </h3>
+                <h3>You <i>know</i> you want to.</h3>
+            </div>
+            <div class="middle">
+                <form id="myForm">
+                    <h3>Let's do this!</h3>
+                    <div class="inputContainer">
+                        <div class="leftSide">
+                            <label for="firstName">First Name</label>
+                            <br>
+                            <input type="text" id="firstName" name="firstName" required>  
+                            <br><br>
+                            <label for="email">Email</label>  
+                            <br>
+                            <input type="email" id="email" name="email" required>
+                            <br><br>
+                            <label for="password">Password</label>
+                            <br>
+                            <input type="password" id="password" name="password" required>
+                            <p id="error"></p>
+                        </div>
+                        <div class="rightSide">
+                            <label for="lastName">Last Name</label>
+                            <br>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <br><br>
+                            <label for="phone">Phone Number</label>
+                            <br>
+                            <input type="tel" id="phone" name="phone" required>
+                            <br><br>
+                            <label for="passwordConfirmation">Confirm Password</label>
+                            <br>
+                            <input type="password" id="passwordConfirmation" name="passwordConfirmation" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <br>
+                <button type="submit" form="myForm">Create Account</button>
+                <br>
+                <br>
+                <span>Already have an account? <a href="#">Log in</a></span>
+            </div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>
